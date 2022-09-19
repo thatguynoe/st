@@ -524,11 +524,11 @@ selected(int x, int y)
 
 	if (sel.type == SEL_RECTANGULAR)
 		return BETWEEN(y, sel.nb.y, sel.ne.y)
-		    && BETWEEN(x, sel.nb.x, sel.ne.x);
+			&& BETWEEN(x, sel.nb.x, sel.ne.x);
 
 	return BETWEEN(y, sel.nb.y, sel.ne.y)
-	    && (y != sel.nb.y || x >= sel.nb.x)
-	    && (y != sel.ne.y || x <= sel.ne.x);
+		&& (y != sel.nb.y || x >= sel.nb.x)
+		&& (y != sel.ne.y || x <= sel.ne.x);
 }
 
 void
@@ -652,7 +652,7 @@ getsel(void)
 		 * FIXME: Fix the computer world.
 		 */
 		if ((y < sel.ne.y || lastx >= linelen) &&
-		    (!(last->mode & ATTR_WRAP) || sel.type == SEL_RECTANGULAR))
+			(!(last->mode & ATTR_WRAP) || sel.type == SEL_RECTANGULAR))
 			*ptr++ = '\n';
 	}
 	*ptr = 0;
@@ -799,7 +799,7 @@ ttynew(const char *line, char *cmd, const char *out, char **args)
 	if (line) {
 		if ((cmdfd = open(line, O_RDWR)) < 0)
 			die("open line '%s' failed: %s\n",
-			    line, strerror(errno));
+				line, strerror(errno));
 		dup2(cmdfd, 0);
 		stty(args);
 		return cmdfd;
@@ -1195,7 +1195,7 @@ selscroll(int orig, int n)
 		sel.ob.y += n;
 		sel.oe.y += n;
 		if (sel.ob.y < term.top || sel.ob.y > term.bot ||
-		    sel.oe.y < term.top || sel.oe.y > term.bot) {
+			sel.oe.y < term.top || sel.oe.y > term.bot) {
 			selclear();
 		} else {
 			selnormalize();
@@ -1430,7 +1430,7 @@ tdefcolor(const int *attr, int *npar, int l)
 	case 4: /* direct color in CMYK space */
 	default:
 		fprintf(stderr,
-		        "erresc(38): gfx attr %d unknown\n", attr[*npar]);
+				"erresc(38): gfx attr %d unknown\n", attr[*npar]);
 		break;
 	}
 
@@ -1645,13 +1645,13 @@ tsetmode(int priv, int set, const int *args, int narg)
 				break;
 			/* Not implemented mouse modes. See comments there. */
 			case 1001: /* mouse highlight mode; can hang the
-				      terminal by design when implemented. */
+					  terminal by design when implemented. */
 			case 1005: /* UTF-8 mouse mode; will confuse
-				      applications not supporting UTF-8
-				      and luit. */
+					  applications not supporting UTF-8
+					  and luit. */
 			case 1015: /* urxvt mangled mouse mode; incompatible
-				      and can be mistaken for other control
-				      codes. */
+					  and can be mistaken for other control
+					  codes. */
 				break;
 			default:
 				fprintf(stderr,
@@ -1963,17 +1963,17 @@ osc_color_response(int num, int index, int is_osc4)
 
 	if (xgetcolor(is_osc4 ? num : index, &r, &g, &b)) {
 		fprintf(stderr, "erresc: failed to fetch %s color %d\n",
-		        is_osc4 ? "osc4" : "osc",
-		        is_osc4 ? num : index);
+				is_osc4 ? "osc4" : "osc",
+				is_osc4 ? num : index);
 		return;
 	}
 
 	n = snprintf(buf, sizeof buf, "\033]%s%d;rgb:%02x%02x/%02x%02x/%02x%02x\007",
-	             is_osc4 ? "4;" : "", num, r, r, g, g, b, b);
+				 is_osc4 ? "4;" : "", num, r, r, g, g, b, b);
 	if (n < 0 || n >= sizeof(buf)) {
 		fprintf(stderr, "error: %s while printing %s response\n",
-		        n < 0 ? "snprintf failed" : "truncation occurred",
-		        is_osc4 ? "osc4" : "osc");
+				n < 0 ? "snprintf failed" : "truncation occurred",
+				is_osc4 ? "osc4" : "osc");
 	} else {
 		ttywrite(buf, n, 1);
 	}
@@ -2035,7 +2035,7 @@ strhandle(void)
 				osc_color_response(par, osc_table[j].idx, 0);
 			} else if (xsetcolorname(osc_table[j].idx, p)) {
 				fprintf(stderr, "erresc: invalid %s color: %s\n",
-				        osc_table[j].str, p);
+						osc_table[j].str, p);
 			} else {
 				tfulldirt();
 			}
@@ -2054,7 +2054,7 @@ strhandle(void)
 				if (par == 104 && narg <= 1)
 					return; /* color reset without parameter */
 				fprintf(stderr, "erresc: invalid color j=%d, p=%s\n",
-				        j, p ? p : "(null)");
+						j, p ? p : "(null)");
 			} else {
 				/*
 				 * TODO if defaultbg color is changed, borders
@@ -2712,13 +2712,13 @@ tresize(int col, int row)
 	minrow = MIN(row, term.row);
 	mincol = MIN(col, term.maxcol);
 
- 	if (col < 1 || row < 1) {
- 		fprintf(stderr,
- 		        "tresize: error resizing to %dx%d\n", col, row);
+	if (col < 1 || row < 1) {
+		fprintf(stderr,
+				"tresize: error resizing to %dx%d\n", col, row);
 	}
 	if (col < 1 || row < 1) {
 		fprintf(stderr,
-		        "tresize: error resizing to %dx%d\n", col, row);
+				"tresize: error resizing to %dx%d\n", col, row);
 		return;
 	}
 
