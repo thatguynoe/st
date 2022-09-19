@@ -17,6 +17,7 @@ My build of [st](https://st.suckless.org/).
 * [This patch](https://github.com/nimaipatel/st/blob/master/patches/7672445bab01cb4e861651dc540566ac22e25812.diff) prevents cutting off text after resizing.
 * [**csi_22_23-0.8.5**](https://st.suckless.org/patches/csi_22_23/st-csi_22_23-0.8.5.diff) saves and restores the window title (e.g. when opening and closing neovim).
 * [**font2-0.8.5**](https://st.suckless.org/patches/font2/st-font2-0.8.5.diff) adds support for multiple fonts.
+* [**gruvbox-dark-0.8.5**](https://st.suckless.org/patches/gruvbox/st-gruvbox-dark-0.8.5.diff) enables the gruvbox theme.
 
 ## Installation
 
