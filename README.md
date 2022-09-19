@@ -14,6 +14,7 @@ My build of [st](https://st.suckless.org/).
 * [**anysize-20220718-baa9357**](https://st.suckless.org/patches/anysize/st-anysize-20220718-baa9357.diff) allows st to fill the entire space allocated to it.
 * [**bold-is-not-bright-20190127-3be4cf1**](https://st.suckless.org/patches/bold-is-not-bright/st-bold-is-not-bright-20190127-3be4cf1.diff) is self-explanatory.
 * [**boxdraw_v2-0.8.5**](https://st.suckless.org/patches/boxdraw/st-boxdraw_v2-0.8.5.diff) renders lines/blocks characters better.
+* [This patch](https://github.com/nimaipatel/st/blob/master/patches/7672445bab01cb4e861651dc540566ac22e25812.diff) prevents cutting off text after resizing.
 
 ## Installation
 
