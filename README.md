@@ -13,6 +13,7 @@ My build of [st](https://st.suckless.org/).
     * [This code](https://github.com/LukeSmithxyz/st/commit/ffcacfa98d1774cfa98d960e8c5244a38d09447e) makes windows completely transparent when set as so.
 * [**anysize-20220718-baa9357**](https://st.suckless.org/patches/anysize/st-anysize-20220718-baa9357.diff) allows st to fill the entire space allocated to it.
 * [**bold-is-not-bright-20190127-3be4cf1**](https://st.suckless.org/patches/bold-is-not-bright/st-bold-is-not-bright-20190127-3be4cf1.diff) is self-explanatory.
+* [**boxdraw_v2-0.8.5**](https://st.suckless.org/patches/boxdraw/st-boxdraw_v2-0.8.5.diff) renders lines/blocks characters better.
 
 ## Installation
 
