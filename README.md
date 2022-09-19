@@ -18,6 +18,10 @@ My build of [st](https://st.suckless.org/).
 * [**csi_22_23-0.8.5**](https://st.suckless.org/patches/csi_22_23/st-csi_22_23-0.8.5.diff) saves and restores the window title (e.g. when opening and closing neovim).
 * [**font2-0.8.5**](https://st.suckless.org/patches/font2/st-font2-0.8.5.diff) adds support for multiple fonts.
 * [**gruvbox-dark-0.8.5**](https://st.suckless.org/patches/gruvbox/st-gruvbox-dark-0.8.5.diff) enables the gruvbox theme.
+* [**scrollback-0.8.5**](https://st.suckless.org/patches/scrollback/st-scrollback-0.8.5.diff) along with the three patches below allows for scrolling in st using the keyboard and/or mouse.
+    * [**scrollback-mouse-20220127-2c5edf2**](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20220127-2c5edf2.diff)
+    * [**scrollback-mouse-altscreen-20220127-2c5edf2**](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-20220127-2c5edf2.diff)
+    * [**scrollback-mouse-increment-0.8.2**](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-increment-0.8.2.diff)
 
 ## Installation
 
