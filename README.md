@@ -4,7 +4,10 @@ My build of [st](https://st.suckless.org/).
 
 ## Bindings
 
+* **scroll** with <kbd>alt-j</kbd>, <kbd>alt-k</kbd> or <kbd>alt-pgup</kbd>, <kbd>alt-pgdn</kbd> or <kbd>alt-↑</kbd>, <kbd>alt-↓</kbd>. Scroll faster with <kbd>alt-u</kbd>, <kbd>alt-d</kbd>.
+* **change font size** with the same bindings as above, but with holding down shift. Reset with <kbd>alt-home</kbd>.
 * **change transparency** with <kbd>alt-a</kbd>, <kbd>alt-s</kbd>.
+* **copy text** with <kbd>alt-y</kbd>, **paste** with <kbd>alt-p</kbd> or <kbd>shift-insert</kbd>.
 * **copy command output** with <kbd>alt-o</kbd>, **open urls** with <kbd>alt-l</kbd>, and **copy urls** with <kbd>alt-i</kbd>.
 
 ## Patches and features
