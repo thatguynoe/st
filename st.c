@@ -2715,6 +2715,7 @@ tresize(int col, int row)
  	if (col < 1 || row < 1) {
  		fprintf(stderr,
  		        "tresize: error resizing to %dx%d\n", col, row);
+	}
 	if (col < 1 || row < 1) {
 		fprintf(stderr,
 		        "tresize: error resizing to %dx%d\n", col, row);
