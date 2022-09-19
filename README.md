@@ -25,6 +25,7 @@ My build of [st](https://st.suckless.org/).
     * [**scrollback-mouse-20220127-2c5edf2**](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20220127-2c5edf2.diff)
     * [**scrollback-mouse-altscreen-20220127-2c5edf2**](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-20220127-2c5edf2.diff)
     * [**scrollback-mouse-increment-0.8.2**](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-increment-0.8.2.diff)
+* [**vertcenter-20180320-6ac8c8a**](https://st.suckless.org/patches/vertcenter/st-vertcenter-20180320-6ac8c8a.diff) vertically centers lines.
 
 ## Installation
 
