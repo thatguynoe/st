@@ -23,6 +23,7 @@ My build of [st](https://st.suckless.org/).
 * [**externalpipe-0.8.4**](https://st.suckless.org/patches/externalpipe/st-externalpipe-0.8.4.diff) provides functionality for opening and copying urls.
     * [**externalpipe-eternal-0.8.3**](https://st.suckless.org/patches/externalpipe/st-externalpipe-eternal-0.8.3.diff) lets externalpipe see the entire terminal history.
 * [**font2-0.8.5**](https://st.suckless.org/patches/font2/st-font2-0.8.5.diff) adds support for multiple fonts.
+* [**glyph-wide-support-boxdraw-20220411-ef05519**](https://st.suckless.org/patches/glyph_wide_support/st-glyph-wide-support-boxdraw-20220411-ef05519.diff) fixes wide glyphs truncation (e.g. italic text).
 * [**gruvbox-dark-0.8.5**](https://st.suckless.org/patches/gruvbox/st-gruvbox-dark-0.8.5.diff) enables the gruvbox theme.
 * [**scrollback-0.8.5**](https://st.suckless.org/patches/scrollback/st-scrollback-0.8.5.diff) along with the three patches below allows for scrolling in st using the keyboard and/or mouse.
     * [**scrollback-mouse-20220127-2c5edf2**](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20220127-2c5edf2.diff)
