@@ -38,3 +38,17 @@ git clone https://github.com/thatguynoe/st
 cd st
 sudo make install
 ```
+
+### Updates
+
+The suckless st development branch is the `master` branch in this repo. Consequently, this makes updating st quite easy:
+
+```sh
+git clone https://github.com/thatguynoe/st
+cd st
+
+git switch master
+git pull upstream master
+git switch main
+git merge master
+```
